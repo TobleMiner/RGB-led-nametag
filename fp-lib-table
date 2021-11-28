@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name led-panel)(type KiCad)(uri ${KIPRJMOD}/lib/led-panel.pretty)(options "")(descr ""))
+  (lib (name Perforation)(type KiCad)(uri ${KIPRJMOD}/lib/Perforation.pretty)(options "")(descr ""))
+  (lib (name TestPoint_Small)(type KiCad)(uri ${KIPRJMOD}/lib/TestPoint_Small.pretty)(options "")(descr ""))
+  (lib (name ToolingHole)(type KiCad)(uri ${KIPRJMOD}/lib/ToolingHole.pretty)(options "")(descr ""))
+  (lib (name Package_Texas)(type KiCad)(uri ${KIPRJMOD}/lib/Package_Texas.pretty)(options "")(descr ""))
+)
