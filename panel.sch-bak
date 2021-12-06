@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 24
+Sheet 2 25
 Title ""
 Date ""
 Rev ""
@@ -660,18 +660,6 @@ Wire Wire Line
 Text Label 4750 5150 0    50   ~ 0
 R9
 Wire Wire Line
-	1600 1600 1450 1600
-Text Label 1450 1600 0    50   ~ 0
-R2
-Wire Wire Line
-	1600 1500 1450 1500
-Text Label 1450 1500 0    50   ~ 0
-G2
-Wire Wire Line
-	1600 1400 1450 1400
-Text Label 1450 1400 0    50   ~ 0
-B2
-Wire Wire Line
 	4900 1450 4750 1450
 Text Label 4750 1450 0    50   ~ 0
 R4
@@ -683,78 +671,6 @@ Wire Wire Line
 	4900 1650 4750 1650
 Text Label 4750 1650 0    50   ~ 0
 B4
-Wire Wire Line
-	1600 1700 1450 1700
-Text Label 1450 1700 0    50   ~ 0
-G6
-Wire Wire Line
-	1600 1800 1450 1800
-Text Label 1450 1800 0    50   ~ 0
-R6
-Wire Wire Line
-	1600 2900 1450 2900
-Text Label 1450 2900 0    50   ~ 0
-B6
-Wire Wire Line
-	1600 2800 1450 2800
-Text Label 1450 2800 0    50   ~ 0
-R8
-Wire Wire Line
-	1600 2700 1450 2700
-Text Label 1450 2700 0    50   ~ 0
-G8
-Wire Wire Line
-	1600 2600 1450 2600
-Text Label 1450 2600 0    50   ~ 0
-B8
-Wire Wire Line
-	1600 2200 1450 2200
-Text Label 1450 2200 0    50   ~ 0
-R12
-Wire Wire Line
-	1600 2300 1450 2300
-Text Label 1450 2300 0    50   ~ 0
-B10
-Wire Wire Line
-	1600 2400 1450 2400
-Text Label 1450 2400 0    50   ~ 0
-G10
-Wire Wire Line
-	1600 2500 1450 2500
-Text Label 1450 2500 0    50   ~ 0
-R10
-Wire Wire Line
-	1600 3550 1450 3550
-Text Label 1450 3550 0    50   ~ 0
-B16
-Wire Wire Line
-	1600 3650 1450 3650
-Text Label 1450 3650 0    50   ~ 0
-G16
-Wire Wire Line
-	1600 3750 1450 3750
-Text Label 1450 3750 0    50   ~ 0
-R16
-Wire Wire Line
-	1600 3250 1450 3250
-Text Label 1450 3250 0    50   ~ 0
-R14
-Wire Wire Line
-	1600 3150 1450 3150
-Text Label 1450 3150 0    50   ~ 0
-G14
-Wire Wire Line
-	1600 3850 1450 3850
-Text Label 1450 3850 0    50   ~ 0
-B14
-Wire Wire Line
-	1600 3450 1450 3450
-Text Label 1450 3450 0    50   ~ 0
-G12
-Wire Wire Line
-	1600 3350 1450 3350
-Text Label 1450 3350 0    50   ~ 0
-B12
 Wire Wire Line
 	4900 1750 4750 1750
 Text Label 4750 1750 0    50   ~ 0

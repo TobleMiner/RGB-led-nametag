@@ -1,0 +1,327 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 25 25
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-PICO-D4 U24
+U 1 1 620164C0
+P 5050 3550
+F 0 "U24" H 5050 1861 50  0000 C CNN
+F 1 "ESP32-PICO-D4" H 5050 1770 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm" H 5050 1850 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 5300 2550 50  0001 C CNN
+F 4 "C193707" H 5050 3550 50  0001 C CNN "LCSC"
+	1    5050 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4250 2350
+NoConn ~ 4250 2450
+NoConn ~ 4250 2550
+NoConn ~ 4250 2650
+NoConn ~ 4250 3550
+NoConn ~ 4250 3650
+NoConn ~ 4250 3750
+NoConn ~ 4250 3850
+NoConn ~ 4250 3950
+NoConn ~ 4250 4050
+$Comp
+L Device:C_Small C24
+U 1 1 620182A7
+P 4700 1650
+F 0 "C24" H 4608 1604 50  0000 R CNN
+F 1 "10uF" H 4608 1695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4700 1650 50  0001 C CNN
+F 3 "~" H 4700 1650 50  0001 C CNN
+F 4 "C15525" H 4700 1650 50  0001 C CNN "LCSC"
+	1    4700 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 1950 4950 1950
+Connection ~ 4950 1950
+Wire Wire Line
+	4950 1950 5000 1950
+Connection ~ 5050 1950
+Wire Wire Line
+	5050 1950 5150 1950
+$Comp
+L power:GND #PWR0163
+U 1 1 62019F5E
+P 4700 1800
+F 0 "#PWR0163" H 4700 1550 50  0001 C CNN
+F 1 "GND" H 4705 1627 50  0000 C CNN
+F 2 "" H 4700 1800 50  0001 C CNN
+F 3 "" H 4700 1800 50  0001 C CNN
+	1    4700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1950 5000 1500
+Wire Wire Line
+	5000 1500 4700 1500
+Wire Wire Line
+	4700 1500 4700 1550
+Connection ~ 5000 1950
+Wire Wire Line
+	5000 1950 5050 1950
+$Comp
+L Device:C_Small C23
+U 1 1 6201C49B
+P 4350 1650
+F 0 "C23" H 4258 1604 50  0000 R CNN
+F 1 "10uF" H 4258 1695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4350 1650 50  0001 C CNN
+F 3 "~" H 4350 1650 50  0001 C CNN
+F 4 "C15525" H 4350 1650 50  0001 C CNN "LCSC"
+	1    4350 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 6201D022
+P 4000 1650
+F 0 "C22" H 3908 1604 50  0000 R CNN
+F 1 "10uF" H 3908 1695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4000 1650 50  0001 C CNN
+F 3 "~" H 4000 1650 50  0001 C CNN
+F 4 "C15525" H 4000 1650 50  0001 C CNN "LCSC"
+	1    4000 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 6201D3C9
+P 3650 1650
+F 0 "C21" H 3558 1604 50  0000 R CNN
+F 1 "10uF" H 3558 1695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3650 1650 50  0001 C CNN
+F 3 "~" H 3650 1650 50  0001 C CNN
+F 4 "C15525" H 3650 1650 50  0001 C CNN "LCSC"
+	1    3650 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 1500 4350 1500
+Wire Wire Line
+	3650 1500 3650 1550
+Connection ~ 4700 1500
+Wire Wire Line
+	4000 1550 4000 1500
+Connection ~ 4000 1500
+Wire Wire Line
+	4000 1500 3650 1500
+Wire Wire Line
+	4350 1550 4350 1500
+Connection ~ 4350 1500
+Wire Wire Line
+	4350 1500 4000 1500
+Wire Wire Line
+	3650 1750 4000 1750
+Wire Wire Line
+	4700 1750 4700 1800
+Connection ~ 4700 1750
+Connection ~ 4000 1750
+Wire Wire Line
+	4000 1750 4350 1750
+Connection ~ 4350 1750
+Wire Wire Line
+	4350 1750 4700 1750
+Text HLabel 5950 2450 2    50   Output ~ 0
+TXD
+Wire Wire Line
+	5950 2450 5850 2450
+Text HLabel 5950 2650 2    50   Input ~ 0
+RXD
+Wire Wire Line
+	5950 2650 5850 2650
+Text HLabel 5950 2350 2    50   Input ~ 0
+BOOT
+Wire Wire Line
+	5950 2350 5850 2350
+Text HLabel 4150 2150 0    50   Input ~ 0
+EN
+Wire Wire Line
+	4150 2150 4250 2150
+NoConn ~ 5850 4850
+$Comp
+L power:GND #PWR0164
+U 1 1 6201FD9A
+P 5050 5200
+F 0 "#PWR0164" H 5050 4950 50  0001 C CNN
+F 1 "GND" H 5055 5027 50  0000 C CNN
+F 2 "" H 5050 5200 50  0001 C CNN
+F 3 "" H 5050 5200 50  0001 C CNN
+	1    5050 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5200 5050 5150
+$Comp
+L Device:C_Small C25
+U 1 1 620209CB
+P 5900 1800
+F 0 "C25" H 5992 1846 50  0000 L CNN
+F 1 "0R" H 5992 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5900 1800 50  0001 C CNN
+F 3 "~" H 5900 1800 50  0001 C CNN
+	1    5900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C27
+U 1 1 62022787
+P 6100 2000
+F 0 "C27" H 6192 2046 50  0000 L CNN
+F 1 "DNP" H 6192 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6100 2000 50  0001 C CNN
+F 3 "~" H 6100 2000 50  0001 C CNN
+	1    6100 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C26
+U 1 1 62022B82
+P 6100 1600
+F 0 "C26" H 6192 1646 50  0000 L CNN
+F 1 "DNP" H 6192 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6100 1600 50  0001 C CNN
+F 3 "~" H 6100 1600 50  0001 C CNN
+	1    6100 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 1600 5900 1600
+Wire Wire Line
+	5900 1600 5900 1700
+Wire Wire Line
+	6000 2000 5900 2000
+Wire Wire Line
+	5900 2000 5900 1900
+Wire Wire Line
+	5850 2150 5900 2150
+Wire Wire Line
+	5900 2150 5900 2000
+Connection ~ 5900 2000
+$Comp
+L Device:Antenna AE1
+U 1 1 62023DF8
+P 5900 1150
+F 0 "AE1" H 5980 1139 50  0000 L CNN
+F 1 "Antenna" H 5980 1048 50  0000 L CNN
+F 2 "Antenna_SMD_Molex:2065130001" H 5900 1150 50  0001 C CNN
+F 3 "~" H 5900 1150 50  0001 C CNN
+	1    5900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0165
+U 1 1 620247BD
+P 6250 2050
+F 0 "#PWR0165" H 6250 1800 50  0001 C CNN
+F 1 "GND" H 6255 1877 50  0000 C CNN
+F 2 "" H 6250 2050 50  0001 C CNN
+F 3 "" H 6250 2050 50  0001 C CNN
+	1    6250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2050 6250 2000
+Wire Wire Line
+	6250 1600 6200 1600
+Wire Wire Line
+	6200 2000 6250 2000
+Connection ~ 6250 2000
+Wire Wire Line
+	6250 2000 6250 1600
+Wire Wire Line
+	5900 1350 5900 1600
+Connection ~ 5900 1600
+Text HLabel 2900 1500 0    50   Input ~ 0
+3V3
+Connection ~ 3650 1500
+$Comp
+L Device:C_Small C29
+U 1 1 6202D4D9
+P 3300 1650
+F 0 "C29" H 3208 1604 50  0000 R CNN
+F 1 "10uF" H 3208 1695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3300 1650 50  0001 C CNN
+F 3 "~" H 3300 1650 50  0001 C CNN
+F 4 "C15525" H 3300 1650 50  0001 C CNN "LCSC"
+	1    3300 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C28
+U 1 1 6202D4E0
+P 2950 1650
+F 0 "C28" H 2858 1604 50  0000 R CNN
+F 1 "10uF" H 2858 1695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2950 1650 50  0001 C CNN
+F 3 "~" H 2950 1650 50  0001 C CNN
+F 4 "C15525" H 2950 1650 50  0001 C CNN "LCSC"
+	1    2950 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 1750 3300 1750
+Connection ~ 3650 1750
+Connection ~ 3300 1750
+Wire Wire Line
+	3300 1750 3650 1750
+Wire Wire Line
+	2950 1500 2950 1550
+Wire Wire Line
+	2950 1500 3300 1500
+Wire Wire Line
+	3300 1550 3300 1500
+Connection ~ 3300 1500
+Wire Wire Line
+	3300 1500 3650 1500
+Wire Wire Line
+	2900 1500 2950 1500
+Connection ~ 2950 1500
+Text Label 6200 2850 2    50   ~ 0
+VSPICS
+Text Label 6200 3550 2    50   ~ 0
+VSPICLK
+Wire Wire Line
+	5850 3550 6200 3550
+Wire Wire Line
+	5850 2850 6200 2850
+Wire Wire Line
+	5850 3950 6200 3950
+Text Label 6200 3950 2    50   ~ 0
+VSPID
+Wire Wire Line
+	5850 3650 6200 3650
+Text Label 6200 3650 2    50   ~ 0
+VSPIQ
+Wire Wire Line
+	5850 3350 6200 3350
+Text Label 6200 3350 2    50   ~ 0
+HSPICLK
+Wire Wire Line
+	5850 3150 6200 3150
+Text Label 6200 3150 2    50   ~ 0
+HSPIQ
+Wire Wire Line
+	5850 3250 6200 3250
+Text Label 6200 3250 2    50   ~ 0
+HSPID
+Wire Wire Line
+	5850 3450 6200 3450
+Text Label 6200 3450 2    50   ~ 0
+HSPICS
+$EndSCHEMATC

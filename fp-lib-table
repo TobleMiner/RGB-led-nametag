@@ -4,4 +4,5 @@
   (lib (name TestPoint_Small)(type KiCad)(uri ${KIPRJMOD}/lib/TestPoint_Small.pretty)(options "")(descr ""))
   (lib (name ToolingHole)(type KiCad)(uri ${KIPRJMOD}/lib/ToolingHole.pretty)(options "")(descr ""))
   (lib (name Package_Texas)(type KiCad)(uri ${KIPRJMOD}/lib/Package_Texas.pretty)(options "")(descr ""))
+  (lib (name Antenna_SMD_Molex)(type KiCad)(uri ${KIPRJMOD}/lib/Antenna_SMD_Molex.pretty)(options "")(descr ""))
 )
