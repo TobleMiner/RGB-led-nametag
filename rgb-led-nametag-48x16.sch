@@ -1398,4 +1398,15 @@ Wire Wire Line
 Wire Bus Line
 	2950 1250 2950 6650
 Connection ~ 9800 2700
+$Comp
+L Connector_TagConnect:TagConnect_TC2030_SWD J?
+U 1 1 620AEB39
+P 8650 2850
+F 0 "J?" H 8650 3175 50  0000 C CNN
+F 1 "TagConnect_TC2030_SWD" H 8650 3084 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 8650 2850 50  0001 C CNN
+F 3 "" H 8650 2850 50  0001 C CNN
+	1    8650 2850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
