@@ -552,17 +552,17 @@ NoConn ~ 2050 4600
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J?
 U 1 1 61CA6D11
-P 10200 2500
+P 10100 1450
 AR Path="/61A41C1D/61CA6D11" Ref="J?"  Part="1" 
 AR Path="/61C4C20D/61CA6D11" Ref="J?"  Part="1" 
 AR Path="/61C4C905/61CA6D11" Ref="J?"  Part="1" 
 AR Path="/61CA6D11" Ref="J1"  Part="1" 
-F 0 "J1" H 10307 3367 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 10307 3276 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 10350 2500 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10350 2500 50  0001 C CNN
-F 4 "C167321" H 10200 2500 50  0001 C CNN "LCSC"
-	1    10200 2500
+F 0 "J1" H 10207 2317 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 10207 2226 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 10250 1450 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10250 1450 50  0001 C CNN
+F 4 "C167321" H 10100 1450 50  0001 C CNN "LCSC"
+	1    10100 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -601,6 +601,7 @@ F 0 "U?" H 6350 5400 50  0000 C CNN
 F 1 "STM32F722RETx" H 6800 3650 50  0000 C CNN
 F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 6200 1950 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00330506.pdf" H 6800 3650 50  0001 C CNN
+F 4 "C118207" H 6800 3650 50  0001 C CNN "LCSC"
 	1    6800 3650
 	1    0    0    -1  
 $EndComp
@@ -1092,8 +1093,6 @@ Text Label 7850 2750 2    50   ~ 0
 SPI1_MOSI
 Text Label 7850 5050 2    50   ~ 0
 SPI2_CLK
-Text Label 7850 5150 2    50   ~ 0
-SPI2_MISO
 Text Label 7850 5250 2    50   ~ 0
 SPI2_MOSI
 Text Label 1150 2900 0    50   ~ 0
@@ -1201,8 +1200,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 5050 7850 5050
 Wire Wire Line
-	7400 5150 7850 5150
-Wire Wire Line
 	7400 5250 7850 5250
 Wire Wire Line
 	7400 2750 7850 2750
@@ -1257,6 +1254,148 @@ Wire Wire Line
 	7400 3050 7850 3050
 Text Label 7850 3050 2    50   ~ 0
 RX
+NoConn ~ 6100 3350
+NoConn ~ 6100 3450
+$Comp
+L Power_Protection:SRV05-4 U?
+U 1 1 61FD5228
+P 8750 3850
+F 0 "U?" H 8750 4531 50  0000 C CNN
+F 1 "SRV05-4" H 8750 4440 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9450 3400 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 8750 3850 50  0001 C CNN
+F 4 "C85364" H 8750 3850 50  0001 C CNN "LCSC"
+	1    8750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61FD772A
+P 10850 1150
+F 0 "R?" V 10750 1000 50  0000 C CNN
+F 1 "5.1k" V 10750 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10850 1150 50  0001 C CNN
+F 3 "~" H 10850 1150 50  0001 C CNN
+F 4 "C23186" H 10850 1150 50  0001 C CNN "LCSC"
+	1    10850 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61FE1341
+P 10850 1050
+F 0 "R?" V 10750 1200 50  0000 C CNN
+F 1 "5.1k" V 10750 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10850 1050 50  0001 C CNN
+F 3 "~" H 10850 1050 50  0001 C CNN
+F 4 "C23186" H 10850 1050 50  0001 C CNN "LCSC"
+	1    10850 1050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10750 1050 10700 1050
+Wire Wire Line
+	10700 1150 10750 1150
+Wire Wire Line
+	10950 1150 10950 1050
+$Comp
+L power:GND #PWR?
+U 1 1 620090EB
+P 11050 1100
+F 0 "#PWR?" H 11050 850 50  0001 C CNN
+F 1 "GND" H 11055 927 50  0000 C CNN
+F 2 "" H 11050 1100 50  0001 C CNN
+F 3 "" H 11050 1100 50  0001 C CNN
+	1    11050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 1050 11050 1050
+Wire Wire Line
+	11050 1050 11050 1100
+Connection ~ 10950 1050
+Wire Wire Line
+	10700 1350 10700 1450
+Wire Wire Line
+	10700 1550 10700 1650
+Wire Wire Line
+	10700 1450 11050 1450
+Connection ~ 10700 1450
+Text Label 11050 1450 2    50   ~ 0
+D-
+Wire Wire Line
+	10700 1650 11050 1650
+Text Label 11050 1650 2    50   ~ 0
+D+
+Connection ~ 10700 1650
+NoConn ~ 10700 1950
+NoConn ~ 10700 2050
+$Comp
+L power:GND #PWR?
+U 1 1 6205E138
+P 10100 2400
+F 0 "#PWR?" H 10100 2150 50  0001 C CNN
+F 1 "GND" H 10105 2227 50  0000 C CNN
+F 2 "" H 10100 2400 50  0001 C CNN
+F 3 "" H 10100 2400 50  0001 C CNN
+	1    10100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2400 10100 2350
+$Comp
+L Device:C_Small C?
+U 1 1 62076430
+P 9800 2550
+F 0 "C?" H 9708 2504 50  0000 R CNN
+F 1 "1nF" H 9708 2595 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9800 2550 50  0001 C CNN
+F 3 "~" H 9800 2550 50  0001 C CNN
+F 4 "C35216" H 9800 2550 50  0001 C CNN "LCSC"
+	1    9800 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62077EF6
+P 9650 2550
+F 0 "R?" H 9592 2504 50  0000 R CNN
+F 1 "200k" H 9592 2595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 9650 2550 50  0001 C CNN
+F 3 "~" H 9650 2550 50  0001 C CNN
+F 4 "C17539" H 9650 2550 50  0001 C CNN "LCSC"
+	1    9650 2550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9800 2450 9800 2400
+Wire Wire Line
+	9800 2400 9650 2400
+Wire Wire Line
+	9650 2400 9650 2450
+Connection ~ 9800 2400
+Wire Wire Line
+	9800 2400 9800 2350
+Wire Wire Line
+	9650 2650 9650 2700
+Wire Wire Line
+	9650 2700 9800 2700
+Wire Wire Line
+	9800 2700 9800 2650
+$Comp
+L power:GND #PWR?
+U 1 1 6209909A
+P 9800 2750
+F 0 "#PWR?" H 9800 2500 50  0001 C CNN
+F 1 "GND" H 9805 2577 50  0000 C CNN
+F 2 "" H 9800 2750 50  0001 C CNN
+F 3 "" H 9800 2750 50  0001 C CNN
+	1    9800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2750 9800 2700
 Wire Bus Line
 	2950 1250 2950 6650
+Connection ~ 9800 2700
 $EndSCHEMATC
