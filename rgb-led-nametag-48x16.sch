@@ -1259,13 +1259,13 @@ NoConn ~ 6100 3450
 $Comp
 L Power_Protection:SRV05-4 U26
 U 1 1 61FD5228
-P 8750 3850
-F 0 "U26" H 8750 4531 50  0000 C CNN
-F 1 "SRV05-4" H 8750 4440 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9450 3400 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 8750 3850 50  0001 C CNN
-F 4 "C85364" H 8750 3850 50  0001 C CNN "LCSC"
-	1    8750 3850
+P 9350 3900
+F 0 "U26" H 9350 4581 50  0000 C CNN
+F 1 "SRV05-4" H 9350 4490 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 10050 3450 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 9350 3900 50  0001 C CNN
+F 4 "C85364" H 9350 3900 50  0001 C CNN "LCSC"
+	1    9350 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1395,8 +1395,6 @@ F 3 "" H 9800 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9800 2750 9800 2700
-Wire Bus Line
-	2950 1250 2950 6650
 Connection ~ 9800 2700
 $Comp
 L Connector_TagConnect:TagConnect_TC2030_SWD J2
@@ -1410,10 +1408,10 @@ F 3 "" H 8650 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:TPS63001 U?
+L Regulator_Switching:TPS63001 U27
 U 1 1 620B2056
 P 12600 1900
-F 0 "U?" H 12600 2567 50  0000 C CNN
+F 0 "U27" H 12600 2567 50  0000 C CNN
 F 1 "TPS63001" H 12600 2476 50  0000 C CNN
 F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 13450 1350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 12300 2450 50  0001 C CNN
@@ -1421,10 +1419,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 12300 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H3
 U 1 1 620BC07C
 P 600 1050
-F 0 "H?" H 700 1099 50  0000 L CNN
+F 0 "H3" H 700 1099 50  0000 L CNN
 F 1 "MountingPad" H 700 1008 50  0000 L CNN
 F 2 "MountingPad:MountingPad_20x5mm" H 600 1050 50  0001 C CNN
 F 3 "~" H 600 1050 50  0001 C CNN
@@ -1432,14 +1430,24 @@ F 3 "~" H 600 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0178
 U 1 1 620BCEB0
 P 600 1150
-F 0 "#PWR?" H 600 900 50  0001 C CNN
+F 0 "#PWR0178" H 600 900 50  0001 C CNN
 F 1 "GND" H 605 977 50  0000 C CNN
 F 2 "" H 600 1150 50  0001 C CNN
 F 3 "" H 600 1150 50  0001 C CNN
 	1    600  1150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8850 3800 8650 3800
+Text Label 8650 3800 0    50   ~ 0
+D-
+Wire Wire Line
+	8850 4000 8650 4000
+Text Label 8650 4000 0    50   ~ 0
+D+
+Wire Bus Line
+	2950 1250 2950 6650
 $EndSCHEMATC
