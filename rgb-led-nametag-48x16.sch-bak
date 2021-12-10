@@ -1398,4 +1398,37 @@ Wire Wire Line
 Wire Bus Line
 	2950 1250 2950 6650
 Connection ~ 9800 2700
+$Comp
+L Connector_TagConnect:TagConnect_TC2030_SWD J2
+U 1 1 620AEB39
+P 8650 2850
+F 0 "J2" H 8650 3175 50  0000 C CNN
+F 1 "TagConnect_TC2030_SWD" H 8650 3084 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 8650 2850 50  0001 C CNN
+F 3 "" H 8650 2850 50  0001 C CNN
+	1    8650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:TPS63001 U?
+U 1 1 620B2056
+P 12600 1900
+F 0 "U?" H 12600 2567 50  0000 C CNN
+F 1 "TPS63001" H 12600 2476 50  0000 C CNN
+F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 13450 1350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 12300 2450 50  0001 C CNN
+	1    12600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 620BC07C
+P 600 1050
+F 0 "H?" H 700 1099 50  0000 L CNN
+F 1 "MountingPad" H 700 1008 50  0000 L CNN
+F 2 "MountingPad:MountingPad_20x5mm" H 600 1050 50  0001 C CNN
+F 3 "~" H 600 1050 50  0001 C CNN
+	1    600  1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
