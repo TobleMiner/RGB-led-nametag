@@ -1071,7 +1071,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 2850 5050 2300
 Wire Wire Line
-	5050 2050 6100 2050
+	5050 2050 5250 2050
 Connection ~ 5050 2050
 Wire Wire Line
 	5050 2050 5050 2100
@@ -2025,12 +2025,8 @@ Wire Wire Line
 	16300 3450 17250 3450
 Text Notes 16250 3600 0    50   ~ 0
 Output caps shared with U27
-Wire Wire Line
-	7400 3350 7850 3350
 Text Label 7850 3350 2    50   ~ 0
 SWDIO
-Wire Wire Line
-	7400 3450 7850 3450
 Text Label 7850 3450 2    50   ~ 0
 SWCLK
 Wire Wire Line
@@ -2724,8 +2720,122 @@ Wire Wire Line
 	8150 4800 8150 4850
 Wire Wire Line
 	8150 4850 8100 4850
-Wire Bus Line
-	2950 1250 2950 6650
 Text Label 7450 4850 0    50   ~ 0
 USB_SENSE
+$Comp
+L Device:C_Small C?
+U 1 1 639307F9
+P 7300 1100
+AR Path="/620161BA/639307F9" Ref="C?"  Part="1" 
+AR Path="/639307F9" Ref="C50"  Part="1" 
+F 0 "C50" H 7208 1054 50  0000 R CNN
+F 1 "10uF" H 7208 1145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7300 1100 50  0001 C CNN
+F 3 "~" H 7300 1100 50  0001 C CNN
+F 4 "C15525" H 7300 1100 50  0001 C CNN "LCSC"
+	1    7300 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 950  7300 950 
+Wire Wire Line
+	7300 950  7300 1000
+Connection ~ 6950 950 
+Wire Wire Line
+	6950 1250 7300 1250
+Wire Wire Line
+	7300 1250 7300 1200
+Connection ~ 6950 1250
+$Comp
+L Connector:TestPoint TP3
+U 1 1 639D4B98
+P 5250 1800
+F 0 "TP3" H 5308 1924 50  0000 L CNN
+F 1 "~RST" H 5308 1826 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5450 1800 50  0001 C CNN
+F 3 "~" H 5450 1800 50  0001 C CNN
+	1    5250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1800 5250 2050
+Connection ~ 5250 2050
+Wire Wire Line
+	5250 2050 6100 2050
+$Comp
+L Connector:TestPoint TP4
+U 1 1 639F7FB0
+P 8000 3150
+F 0 "TP4" H 8058 3268 50  0000 L CNN
+F 1 "SWDIO" H 8058 3177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8200 3150 50  0001 C CNN
+F 3 "~" H 8200 3150 50  0001 C CNN
+	1    8000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3150 8000 3350
+Wire Wire Line
+	7400 3350 8000 3350
+$Comp
+L Connector:TestPoint TP5
+U 1 1 63A34637
+P 8350 3150
+F 0 "TP5" H 8408 3268 50  0000 L CNN
+F 1 "SWCLK" H 8408 3177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8550 3150 50  0001 C CNN
+F 3 "~" H 8550 3150 50  0001 C CNN
+	1    8350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3450 8350 3150
+Wire Wire Line
+	7400 3450 8350 3450
+$Comp
+L Connector:TestPoint TP6
+U 1 1 63AD5A2F
+P 600 1600
+F 0 "TP6" H 658 1718 50  0000 L CNN
+F 1 "GND" H 658 1627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 800 1600 50  0001 C CNN
+F 3 "~" H 800 1600 50  0001 C CNN
+	1    600  1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0217
+U 1 1 63AF450F
+P 600 1600
+F 0 "#PWR0217" H 600 1350 50  0001 C CNN
+F 1 "GND" H 605 1427 50  0000 C CNN
+F 2 "" H 600 1600 50  0001 C CNN
+F 3 "" H 600 1600 50  0001 C CNN
+	1    600  1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 63AF54D2
+P 950 1550
+F 0 "TP7" H 892 1576 50  0000 R CNN
+F 1 "3V3" H 892 1667 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1150 1550 50  0001 C CNN
+F 3 "~" H 1150 1550 50  0001 C CNN
+	1    950  1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 63B38E2F
+P 950 1550
+F 0 "#PWR?" H 950 1400 50  0001 C CNN
+F 1 "+3V3" H 965 1723 50  0000 C CNN
+F 2 "" H 950 1550 50  0001 C CNN
+F 3 "" H 950 1550 50  0001 C CNN
+	1    950  1550
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	2950 1250 2950 6650
 $EndSCHEMATC
