@@ -247,7 +247,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 1350 5900 1600
 Connection ~ 5900 1600
-Text HLabel 2900 1500 0    50   Input ~ 0
+Text HLabel 2550 1500 0    50   Input ~ 0
 3V3
 Connection ~ 3650 1500
 $Comp
@@ -289,8 +289,6 @@ Wire Wire Line
 Connection ~ 3300 1500
 Wire Wire Line
 	3300 1500 3650 1500
-Wire Wire Line
-	2900 1500 2950 1500
 Connection ~ 2950 1500
 Text Label 6200 2850 2    50   ~ 0
 VSPICS
@@ -324,4 +322,34 @@ Wire Wire Line
 	5850 3450 6200 3450
 Text Label 6200 3450 2    50   ~ 0
 HSPICS
+Text HLabel 6200 3550 2    50   Output ~ 0
+CLK
+Text HLabel 6200 2850 2    50   Output ~ 0
+~CS
+Text HLabel 6200 3950 2    50   Output ~ 0
+MOSI
+Text HLabel 6200 3650 2    50   Input ~ 0
+MISO
+$Comp
+L Device:C_Small C?
+U 1 1 6223E7DE
+P 2600 1650
+F 0 "C?" H 2508 1604 50  0000 R CNN
+F 1 "10uF" H 2508 1695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2600 1650 50  0001 C CNN
+F 3 "~" H 2600 1650 50  0001 C CNN
+F 4 "C15525" H 2600 1650 50  0001 C CNN "LCSC"
+	1    2600 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 1500 2600 1500
+Wire Wire Line
+	2600 1550 2600 1500
+Connection ~ 2600 1500
+Wire Wire Line
+	2600 1500 2950 1500
+Wire Wire Line
+	2950 1750 2600 1750
+Connection ~ 2950 1750
 $EndSCHEMATC
