@@ -1503,6 +1503,8 @@ F 4 "C1015" H 17000 5500 50  0001 C CNN "LCSC"
 	1    17000 5500
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8850 3800
+NoConn ~ 8850 4000
 Wire Bus Line
 	2950 1250 2950 6650
 $EndSCHEMATC
