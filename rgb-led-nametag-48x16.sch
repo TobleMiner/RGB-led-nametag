@@ -1201,8 +1201,8 @@ SWCLK
 NoConn ~ 7400 4050
 NoConn ~ 7400 4150
 Wire Wire Line
-	7400 2250 7850 2250
-Text Label 7850 2250 2    50   ~ 0
+	6100 4250 5650 4250
+Text Label 5650 4250 0    50   ~ 0
 IRQ
 Wire Wire Line
 	7400 2950 7850 2950
@@ -2214,8 +2214,8 @@ Wire Wire Line
 Text Label 7850 4950 2    50   ~ 0
 ~ESP_EN
 Wire Wire Line
-	7400 2050 7850 2050
-Text Label 7850 2050 2    50   ~ 0
+	6100 5250 5650 5250
+Text Label 5650 5250 0    50   ~ 0
 PWR_EN
 $Comp
 L Switch:SW_Push SW2
@@ -2826,16 +2826,32 @@ F 3 "~" H 1150 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0218
 U 1 1 63B38E2F
 P 950 1550
-F 0 "#PWR?" H 950 1400 50  0001 C CNN
+F 0 "#PWR0218" H 950 1400 50  0001 C CNN
 F 1 "+3V3" H 965 1723 50  0000 C CNN
 F 2 "" H 950 1550 50  0001 C CNN
 F 3 "" H 950 1550 50  0001 C CNN
 	1    950  1550
 	1    0    0    -1  
 $EndComp
+Text Label 14000 1050 2    50   ~ 0
+~CHRG
+Wire Wire Line
+	14000 1050 13800 1050
+Wire Wire Line
+	13800 1150 14000 1150
+Text Label 14000 1150 2    50   ~ 0
+~STAT2
+Wire Wire Line
+	6100 3850 5650 3850
+Text Label 5650 3850 0    50   ~ 0
+~STAT2
+Wire Wire Line
+	7400 2250 7850 2250
 Wire Bus Line
 	2950 1250 2950 6650
+Text Label 7850 2250 2    50   ~ 0
+~CHRG
 $EndSCHEMATC
