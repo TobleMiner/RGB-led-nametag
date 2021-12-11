@@ -423,16 +423,66 @@ Wire Wire Line
 Connection ~ 4050 1500
 Wire Wire Line
 	4050 1500 3950 1500
-Wire Wire Line
-	5850 3750 6200 3750
 Text Label 6200 3750 2    50   ~ 0
 SDA
-Wire Wire Line
-	5850 3850 6200 3850
 Text Label 6200 3850 2    50   ~ 0
 SCL
-Text HLabel 6200 3850 2    50   Output ~ 0
+Text HLabel 6800 3850 2    50   Output ~ 0
 SCL
-Text HLabel 6200 3750 2    50   BiDi ~ 0
+Text HLabel 6800 3750 2    50   BiDi ~ 0
 SDA
+Text HLabel 6250 4300 2    50   Input ~ 0
+IRQ
+$Comp
+L Device:R_Small R?
+U 1 1 629BE50E
+P 6500 3550
+AR Path="/629BE50E" Ref="R?"  Part="1" 
+AR Path="/620161BA/629BE50E" Ref="R13"  Part="1" 
+F 0 "R13" V 6400 3700 50  0000 C CNN
+F 1 "5.1k" V 6400 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6500 3550 50  0001 C CNN
+F 3 "~" H 6500 3550 50  0001 C CNN
+F 4 "C23186" H 6500 3550 50  0001 C CNN "LCSC"
+	1    6500 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3750 6500 3750
+Wire Wire Line
+	5850 3850 6700 3850
+$Comp
+L Device:R_Small R?
+U 1 1 629C2CA3
+P 6700 3550
+AR Path="/629C2CA3" Ref="R?"  Part="1" 
+AR Path="/620161BA/629C2CA3" Ref="R14"  Part="1" 
+F 0 "R14" V 6600 3700 50  0000 C CNN
+F 1 "5.1k" V 6600 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6700 3550 50  0001 C CNN
+F 3 "~" H 6700 3550 50  0001 C CNN
+F 4 "C23186" H 6700 3550 50  0001 C CNN "LCSC"
+	1    6700 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3650 6700 3850
+Connection ~ 6700 3850
+Wire Wire Line
+	6700 3850 6800 3850
+Wire Wire Line
+	6500 3650 6500 3750
+Connection ~ 6500 3750
+Wire Wire Line
+	6500 3750 6800 3750
+Text Label 4850 1500 0    50   ~ 0
+3V3
+Wire Wire Line
+	6500 3450 6500 3350
+Wire Wire Line
+	6500 3350 6700 3350
+Wire Wire Line
+	6700 3350 6700 3450
+Text Label 6500 3350 0    50   ~ 0
+3V3
 $EndSCHEMATC
