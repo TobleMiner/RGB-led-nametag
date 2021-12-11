@@ -37,24 +37,6 @@ X QH' 9 400 -500 100 L 50 50 1 0 O
 ENDDRAW
 ENDDEF
 #
-# Connector_TagConnect_TagConnect_TC2030_SWD
-#
-DEF Connector_TagConnect_TagConnect_TC2030_SWD J 0 40 Y Y 1 F N
-F0 "J" 0 -200 50 H V C CNN
-F1 "Connector_TagConnect_TagConnect_TC2030_SWD" -100 200 50 H V C CNN
-F2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -350 150 350 -150 1 1 10 f
-X VTGT 1 -500 100 150 R 50 50 1 1 P
-X SWDIO 2 500 100 150 L 50 50 1 1 P
-X ~RESET 3 -500 0 150 R 50 50 1 1 P
-X SWCLK 4 500 0 150 L 50 50 1 1 P
-X GND 5 -500 -100 150 R 50 50 1 1 P
-X SWO 6 500 -100 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_TestPoint
 #
 DEF Connector_TestPoint TP 0 30 N N 1 F N
