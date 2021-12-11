@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 42)
+    (drawings 45)
     (tracks 4950)
     (zones 0)
     (modules 177)
@@ -9164,6 +9164,15 @@
     )
   )
 
+  (gr_text JLCJLCJLCJLC (at 107.875 111.275) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "Tobias Schramm\nRev 1.0   2021" (at 142.125 121.4) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
+  (gr_text "48x16 RGB LED Nametag" (at 104.825 121.425) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.2)) (justify left))
+  )
   (gr_circle (center 135.75 104) (end 135.95 104) (layer F.SilkS) (width 0.4) (tstamp 61CC6759))
   (gr_circle (center 171.45 116.2) (end 171.65 116.2) (layer F.SilkS) (width 0.4) (tstamp 61CC6759))
   (gr_circle (center 171.45 111) (end 171.65 111) (layer F.SilkS) (width 0.4) (tstamp 61CC6759))
