@@ -306,8 +306,6 @@ Wire Wire Line
 	5850 3350 6200 3350
 Text Label 6200 3350 2    50   ~ 0
 HSPICLK
-Wire Wire Line
-	5850 3150 6200 3150
 Text Label 6200 3150 2    50   ~ 0
 HSPIQ
 Wire Wire Line
@@ -431,7 +429,7 @@ Text HLabel 6800 3850 2    50   Output ~ 0
 SCL
 Text HLabel 6800 3750 2    50   BiDi ~ 0
 SDA
-Text HLabel 6250 4300 2    50   Input ~ 0
+Text HLabel 6200 2950 2    50   Input ~ 0
 IRQ
 $Comp
 L Device:R_Small R?
@@ -485,4 +483,70 @@ Wire Wire Line
 	6700 3350 6700 3450
 Text Label 6500 3350 0    50   ~ 0
 3V3
+$Comp
+L Device:R_Small R?
+U 1 1 62E05746
+P 6500 2750
+AR Path="/62E05746" Ref="R?"  Part="1" 
+AR Path="/620161BA/62E05746" Ref="R18"  Part="1" 
+F 0 "R18" V 6400 2900 50  0000 C CNN
+F 1 "5.1k" V 6400 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6500 2750 50  0001 C CNN
+F 3 "~" H 6500 2750 50  0001 C CNN
+F 4 "C23186" H 6500 2750 50  0001 C CNN "LCSC"
+	1    6500 2750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2550 6500 2550
+Wire Wire Line
+	6500 2550 6500 2650
+$Comp
+L power:GND #PWR0201
+U 1 1 62E0842B
+P 6500 2900
+F 0 "#PWR0201" H 6500 2650 50  0001 C CNN
+F 1 "GND" H 6505 2727 50  0000 C CNN
+F 2 "" H 6500 2900 50  0001 C CNN
+F 3 "" H 6500 2900 50  0001 C CNN
+	1    6500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2900 6500 2850
+$Comp
+L Device:R_Small R?
+U 1 1 62E0AE9E
+P 6950 3350
+AR Path="/62E0AE9E" Ref="R?"  Part="1" 
+AR Path="/620161BA/62E0AE9E" Ref="R19"  Part="1" 
+F 0 "R19" V 6850 3500 50  0000 C CNN
+F 1 "5.1k" V 6850 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6950 3350 50  0001 C CNN
+F 3 "~" H 6950 3350 50  0001 C CNN
+F 4 "C23186" H 6950 3350 50  0001 C CNN "LCSC"
+	1    6950 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3150 6950 3250
+$Comp
+L power:GND #PWR0202
+U 1 1 62E0AEA6
+P 6950 3500
+F 0 "#PWR0202" H 6950 3250 50  0001 C CNN
+F 1 "GND" H 6955 3327 50  0000 C CNN
+F 2 "" H 6950 3500 50  0001 C CNN
+F 3 "" H 6950 3500 50  0001 C CNN
+	1    6950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3500 6950 3450
+Wire Wire Line
+	5850 3150 6950 3150
+Wire Wire Line
+	5850 2950 6200 2950
+Text Label 6200 2950 2    50   ~ 0
+IRQ
 $EndSCHEMATC

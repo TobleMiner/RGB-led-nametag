@@ -978,10 +978,6 @@ Text Label 7850 4350 2    50   ~ 0
 SCL
 Text Label 7850 4450 2    50   ~ 0
 SDA
-Text Label 7850 4550 2    50   ~ 0
-~DTR
-Text Label 7850 4650 2    50   ~ 0
-~RTS
 Text Label 7850 3150 2    50   ~ 0
 D-
 Text Label 7850 3250 2    50   ~ 0
@@ -1165,10 +1161,6 @@ Text Label 5650 4450 0    50   ~ 0
 COL_~OE
 Wire Wire Line
 	6100 4450 5650 4450
-Text Label 7850 4750 2    50   ~ 0
-ROW_LATCH
-Wire Wire Line
-	7400 4750 7850 4750
 Text Label 7850 4850 2    50   ~ 0
 ROW_~OE
 Wire Wire Line
@@ -1177,10 +1169,6 @@ Wire Wire Line
 	7400 4350 7850 4350
 Wire Wire Line
 	7400 4450 7850 4450
-Wire Wire Line
-	7400 4550 7850 4550
-Wire Wire Line
-	7400 4650 7850 4650
 Wire Wire Line
 	7400 2750 7850 2750
 Wire Wire Line
@@ -1203,10 +1191,6 @@ Wire Wire Line
 	6100 4550 5650 4550
 Text Label 5650 4550 0    50   ~ 0
 COL_~RST
-Text Label 7850 4950 2    50   ~ 0
-ROW_~RST
-Wire Wire Line
-	7400 4950 7850 4950
 NoConn ~ 7400 3550
 Text Notes 6900 3550 0    50   ~ 0
 JTDI
@@ -1221,8 +1205,8 @@ SWCLK
 NoConn ~ 7400 4050
 NoConn ~ 7400 4150
 Wire Wire Line
-	7400 3750 7850 3750
-Text Label 7850 3750 2    50   ~ 0
+	7400 2250 7850 2250
+Text Label 7850 2250 2    50   ~ 0
 IRQ
 Wire Wire Line
 	7400 2950 7850 2950
@@ -1360,17 +1344,6 @@ $EndComp
 Wire Wire Line
 	15500 7550 15500 7500
 Connection ~ 15500 7500
-$Comp
-L Connector_TagConnect:TagConnect_TC2030_SWD J2
-U 1 1 620AEB39
-P 8650 2850
-F 0 "J2" H 8650 3175 50  0000 C CNN
-F 1 "TagConnect_TC2030_SWD" H 8650 3084 50  0000 C CNN
-F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 8650 2850 50  0001 C CNN
-F 3 "" H 8650 2850 50  0001 C CNN
-	1    8650 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_Switching:TPS63001 U27
 U 1 1 620B2056
@@ -2076,14 +2049,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 950  13250 1000
 Connection ~ 13250 1000
-Text Label 10750 5950 2    50   ~ 0
+Text Label 11000 5950 2    50   ~ 0
 SCL
-Text Label 10750 6050 2    50   ~ 0
+Text Label 11000 6050 2    50   ~ 0
 SDA
-Wire Wire Line
-	10750 5950 10550 5950
-Wire Wire Line
-	10750 6050 10550 6050
 Wire Wire Line
 	14700 3600 15650 3600
 Text Notes 14650 3750 0    50   ~ 0
@@ -2218,15 +2187,187 @@ F 3 "" H 9350 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 4450 9350 4400
+	7400 5050 7850 5050
 Wire Wire Line
-	7400 5250 7850 5250
+	7400 4750 7850 4750
+Wire Wire Line
+	9350 4450 9350 4400
 Text Label 7850 5250 2    50   ~ 0
 SPI2_MOSI
-Wire Bus Line
-	2950 1250 2950 6650
 Wire Wire Line
-	7400 5050 7850 5050
+	7400 5250 7850 5250
+Wire Wire Line
+	7400 3850 7850 3850
+Text Label 11000 5350 2    50   ~ 0
+EN
+Text Label 7850 3850 2    50   ~ 0
+EN
 Text Label 7850 5050 2    50   ~ 0
 SPI2_CLK
+Text Label 7850 4750 2    50   ~ 0
+ROW_LATCH
+Wire Wire Line
+	7400 3750 7850 3750
+Text Label 7850 3750 2    50   ~ 0
+BOOT
+Text Label 11000 5250 2    50   ~ 0
+BOOT
+Text Label 11000 6150 2    50   ~ 0
+IRQ
+Text Label 11000 5500 2    50   ~ 0
+SPI1_CLK
+Text Label 11000 5600 2    50   ~ 0
+SPI1_~CS
+Text Label 11000 5800 2    50   ~ 0
+SPI1_MISO
+Text Label 11000 5700 2    50   ~ 0
+SPI1_MOSI
+Wire Wire Line
+	10550 5700 11000 5700
+Wire Wire Line
+	10550 5800 11000 5800
+Wire Wire Line
+	10550 5500 11000 5500
+Wire Wire Line
+	10550 5600 11000 5600
+Wire Wire Line
+	10550 5950 11000 5950
+Wire Wire Line
+	10550 6050 11000 6050
+Wire Wire Line
+	10550 6150 11000 6150
+Wire Wire Line
+	10550 5350 11000 5350
+Wire Wire Line
+	10550 5250 11000 5250
+Wire Wire Line
+	10550 5150 11000 5150
+Text Label 11000 5150 2    50   ~ 0
+TX
+Wire Wire Line
+	10550 5050 11000 5050
+Text Label 11000 5050 2    50   ~ 0
+RX
+Wire Wire Line
+	7400 4950 7850 4950
+Text Label 7850 4950 2    50   ~ 0
+~ESP_EN
+Wire Wire Line
+	7400 2050 7850 2050
+Text Label 7850 2050 2    50   ~ 0
+PWR_EN
+$Comp
+L Switch:SW_Push SW2
+U 1 1 630C4584
+P 9100 2050
+F 0 "SW2" H 9100 2335 50  0000 C CNN
+F 1 "SW_Push" H 9100 2244 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 9100 2250 50  0001 C CNN
+F 3 "~" H 9100 2250 50  0001 C CNN
+F 4 "C115357" H 9100 2050 50  0001 C CNN "LCSC"
+	1    9100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 630C4D6E
+P 9100 1650
+F 0 "SW1" H 9100 1935 50  0000 C CNN
+F 1 "SW_Push" H 9100 1844 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 9100 1850 50  0001 C CNN
+F 3 "~" H 9100 1850 50  0001 C CNN
+F 4 "C115357" H 9100 1650 50  0001 C CNN "LCSC"
+	1    9100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0203
+U 1 1 630DD49F
+P 9350 2100
+F 0 "#PWR0203" H 9350 1850 50  0001 C CNN
+F 1 "GND" H 9355 1927 50  0000 C CNN
+F 2 "" H 9350 2100 50  0001 C CNN
+F 3 "" H 9350 2100 50  0001 C CNN
+	1    9350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2050 9300 2050
+Text Label 8750 2050 0    50   ~ 0
+~RST
+Wire Wire Line
+	8750 2050 8900 2050
+Text Label 8750 1650 0    50   ~ 0
+DFU
+Wire Wire Line
+	8750 1650 8900 1650
+Wire Wire Line
+	9350 2100 9350 2050
+$Comp
+L power:+3V3 #PWR0204
+U 1 1 631717FF
+P 9350 1600
+F 0 "#PWR0204" H 9350 1450 50  0001 C CNN
+F 1 "+3V3" H 9365 1773 50  0000 C CNN
+F 2 "" H 9350 1600 50  0001 C CNN
+F 3 "" H 9350 1600 50  0001 C CNN
+	1    9350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1600 9350 1650
+Wire Wire Line
+	9350 1650 9300 1650
+Text Label 7850 4550 2    50   ~ 0
+DFU
+$Comp
+L Device:C_Small C?
+U 1 1 631C20EA
+P 7950 4700
+AR Path="/61A41C1D/61A5C767/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61A41C1D/61A68DB0/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61A41C1D/61A6C361/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61A41C1D/61A75B5D/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61A41C1D/61A75B6D/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61A41C1D/61A75B93/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C20D/61A5C767/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C20D/61A68DB0/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C20D/61A6C361/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C20D/61A75B5D/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C20D/61A75B6D/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C20D/61A75B93/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C905/61A5C767/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C905/61A68DB0/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C905/61A6C361/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C905/61A75B5D/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C905/61A75B6D/631C20EA" Ref="C?"  Part="1" 
+AR Path="/61C4C905/61A75B93/631C20EA" Ref="C?"  Part="1" 
+AR Path="/631C20EA" Ref="C?"  Part="1" 
+F 0 "C?" V 7721 4700 50  0000 C CNN
+F 1 "100nF" V 7812 4700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7950 4700 50  0001 C CNN
+F 3 "~" H 7950 4700 50  0001 C CNN
+F 4 "C1525" V 7950 4700 50  0001 C CNN "LCSC"
+	1    7950 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 4550 7950 4600
+Wire Wire Line
+	7400 4550 7950 4550
+$Comp
+L power:GND #PWR?
+U 1 1 631F3184
+P 7950 4850
+F 0 "#PWR?" H 7950 4600 50  0001 C CNN
+F 1 "GND" H 7955 4677 50  0000 C CNN
+F 2 "" H 7950 4850 50  0001 C CNN
+F 3 "" H 7950 4850 50  0001 C CNN
+	1    7950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4850 7950 4800
+Wire Bus Line
+	2950 1250 2950 6650
 $EndSCHEMATC
