@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 25
+Sheet 10 25
 Title ""
 Date ""
 Rev ""
@@ -21,7 +21,7 @@ AR Path="/61A429F9" Ref="U?"  Part="1"
 AR Path="/61A41C1D/61A429F9" Ref="U1"  Part="1" 
 AR Path="/61C4C20D/61A429F9" Ref="U9"  Part="1" 
 AR Path="/61C4C905/61A429F9" Ref="U16"  Part="1" 
-F 0 "U1" H 3625 6915 50  0000 C CNN
+F 0 "U16" H 3625 6915 50  0000 C CNN
 F 1 "led-panel-16x16" H 3625 6824 50  0000 C CNN
 F 2 "led-panel:bga-led-panel-16x16" H 3400 6800 50  0001 C CNN
 F 3 "" H 3400 6800 50  0001 C CNN
