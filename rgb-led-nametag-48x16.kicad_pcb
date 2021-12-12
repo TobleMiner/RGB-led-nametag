@@ -1013,7 +1013,7 @@
     (at 161.3 110.725 180)
     (path /620161BA/620164C0)
     (attr smd)
-    (fp_text reference U24 (at 0 5) (layer F.SilkS)
+    (fp_text reference U24 (at 0 5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value ESP32-PICO-D4 (at 0 -5) (layer F.Fab)
