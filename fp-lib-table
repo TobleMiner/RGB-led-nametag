@@ -6,4 +6,5 @@
   (lib (name Package_Texas)(type KiCad)(uri ${KIPRJMOD}/lib/Package_Texas.pretty)(options "")(descr ""))
   (lib (name Antenna_SMD_Molex)(type KiCad)(uri ${KIPRJMOD}/lib/Antenna_SMD_Molex.pretty)(options "")(descr ""))
   (lib (name MountingPad)(type KiCad)(uri ${KIPRJMOD}/lib/MountingPad.pretty)(options "")(descr ""))
+  (lib (name Package_ESP32)(type KiCad)(uri ${KIPRJMOD}/lib/Package_ESP32.pretty)(options "")(descr ""))
 )
