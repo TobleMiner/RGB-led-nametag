@@ -3280,6 +3280,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Inductor_SMD.3dshapes/L_Bourns-SRN4018.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 0.8 0.8 0.8))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Package_TO_SOT_SMD:SOT-723 (layer F.Cu) (tedit 5A29D5F9) (tstamp 61A3E63C)

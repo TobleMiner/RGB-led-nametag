@@ -2750,6 +2750,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 0.5 0.4 0.4))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module TestPoint:TestPoint_Pad_2.0x2.0mm (layer F.Cu) (tedit 5A0F774F) (tstamp 61BC5565)
