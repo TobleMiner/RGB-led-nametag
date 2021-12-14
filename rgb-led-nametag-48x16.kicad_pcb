@@ -3690,6 +3690,11 @@
     )
     (pad 1 smd rect (at 0 0) (size 20 5) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
+    (model ${KIPRJMOD}/lib/safety_pin_simple.wrl
+      (offset (xyz 0 -0.5 4.5))
+      (scale (xyz 0.35 0.35 0.35))
+      (rotate (xyz 180 0 180))
+    )
   )
 
   (module Package_TO_SOT_SMD:SOT-23-6 (layer F.Cu) (tedit 5A02FF57) (tstamp 61B15F93)
