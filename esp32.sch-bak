@@ -19,7 +19,7 @@ U 1 1 620164C0
 P 5050 3550
 F 0 "U24" H 5050 1861 50  0000 C CNN
 F 1 "ESP32-PICO-D4" H 5050 1770 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm" H 5050 1850 50  0001 C CNN
+F 2 "Package_ESP32:ESP32-Pico-D4" H 5050 1850 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 5300 2550 50  0001 C CNN
 F 4 "C193707" H 5050 3550 50  0001 C CNN "LCSC"
 	1    5050 3550

@@ -43,7 +43,7 @@ $EndSheet
 $Sheet
 S 2050 2800 650  900 
 U 61C25DCC
-F0 "Low side 1" 50
+F0 "High side 1" 50
 F1 "high-side-driver.sch" 50
 F2 "~OE" I L 2050 3300 50 
 F3 "SOUT" O L 2050 3400 50 
@@ -453,7 +453,7 @@ Entry Wire Line
 $Sheet
 S 2050 4000 650  900 
 U 61C56D3D
-F0 "sheet61C56D2D" 50
+F0 "High side 2" 50
 F1 "high-side-driver.sch" 50
 F2 "~OE" I L 2050 4500 50 
 F3 "SOUT" O L 2050 4600 50 
@@ -2851,8 +2851,80 @@ Text Label 5650 3850 0    50   ~ 0
 ~STAT2
 Wire Wire Line
 	7400 2250 7850 2250
-Wire Bus Line
-	2950 1250 2950 6650
 Text Label 7850 2250 2    50   ~ 0
 ~CHRG
+$Comp
+L Device:C_Small C?
+U 1 1 63E4DA71
+P 2400 2350
+AR Path="/620161BA/63E4DA71" Ref="C?"  Part="1" 
+AR Path="/63E4DA71" Ref="C?"  Part="1" 
+F 0 "C?" H 2308 2304 50  0000 R CNN
+F 1 "10uF" H 2308 2395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2400 2350 50  0001 C CNN
+F 3 "~" H 2400 2350 50  0001 C CNN
+F 4 "C15525" H 2400 2350 50  0001 C CNN "LCSC"
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63E6D392
+P 2400 2450
+F 0 "#PWR?" H 2400 2200 50  0001 C CNN
+F 1 "GND" H 2405 2277 50  0000 C CNN
+F 2 "" H 2400 2450 50  0001 C CNN
+F 3 "" H 2400 2450 50  0001 C CNN
+	1    2400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 63E6EE0D
+P 2400 2250
+F 0 "#PWR?" H 2400 2100 50  0001 C CNN
+F 1 "VBUS" H 2415 2423 50  0000 C CNN
+F 2 "" H 2400 2250 50  0001 C CNN
+F 3 "" H 2400 2250 50  0001 C CNN
+	1    2400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 63E6FF8A
+P 2400 5350
+AR Path="/620161BA/63E6FF8A" Ref="C?"  Part="1" 
+AR Path="/63E6FF8A" Ref="C?"  Part="1" 
+F 0 "C?" H 2308 5304 50  0000 R CNN
+F 1 "10uF" H 2308 5395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2400 5350 50  0001 C CNN
+F 3 "~" H 2400 5350 50  0001 C CNN
+F 4 "C15525" H 2400 5350 50  0001 C CNN "LCSC"
+	1    2400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63E6FF90
+P 2400 5450
+F 0 "#PWR?" H 2400 5200 50  0001 C CNN
+F 1 "GND" H 2405 5277 50  0000 C CNN
+F 2 "" H 2400 5450 50  0001 C CNN
+F 3 "" H 2400 5450 50  0001 C CNN
+	1    2400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 63E6FF96
+P 2400 5250
+F 0 "#PWR?" H 2400 5100 50  0001 C CNN
+F 1 "VBUS" H 2415 5423 50  0000 C CNN
+F 2 "" H 2400 5250 50  0001 C CNN
+F 3 "" H 2400 5250 50  0001 C CNN
+	1    2400 5250
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	2950 1250 2950 6650
 $EndSCHEMATC
