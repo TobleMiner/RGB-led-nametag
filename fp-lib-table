@@ -7,4 +7,5 @@
   (lib (name Antenna_SMD_Molex)(type KiCad)(uri ${KIPRJMOD}/lib/Antenna_SMD_Molex.pretty)(options "")(descr ""))
   (lib (name MountingPad)(type KiCad)(uri ${KIPRJMOD}/lib/MountingPad.pretty)(options "")(descr ""))
   (lib (name Package_ESP32)(type KiCad)(uri ${KIPRJMOD}/lib/Package_ESP32.pretty)(options "")(descr ""))
+  (lib (name Package_DSBGA)(type KiCad)(uri ${KIPRJMOD}/lib/Package_DSBGA.pretty)(options "")(descr ""))
 )
