@@ -1088,7 +1088,7 @@ QSPI_D0
 Text Label 4550 1250 2    50   ~ 0
 QSPI_CLK
 Text Label 4550 1550 2    50   ~ 0
-COL_~OE
+ROW_~OE
 Text Label 7850 2550 2    50   ~ 0
 SPI1_CLK
 Text Label 7850 2450 2    50   ~ 0
@@ -1110,9 +1110,9 @@ Wire Wire Line
 	1750 3100 1150 3100
 Connection ~ 1750 3100
 Text Label 1150 3100 0    50   ~ 0
-ROW_LATCH
-Text Label 4550 1350 2    50   ~ 0
 COL_LATCH
+Text Label 4550 1350 2    50   ~ 0
+ROW_LATCH
 Wire Wire Line
 	4100 1350 4550 1350
 Wire Wire Line
@@ -1126,9 +1126,9 @@ QSPI_D1
 Text Label 4550 3200 2    50   ~ 0
 QSPI_CLK
 Text Label 4550 3500 2    50   ~ 0
-COL_~OE
+ROW_~OE
 Text Label 4550 3300 2    50   ~ 0
-COL_LATCH
+ROW_LATCH
 Wire Wire Line
 	4100 3300 4550 3300
 Wire Wire Line
@@ -1142,9 +1142,9 @@ QSPI_D3
 Text Label 4550 5150 2    50   ~ 0
 QSPI_CLK
 Text Label 4550 5450 2    50   ~ 0
-COL_~OE
+ROW_~OE
 Text Label 4550 5250 2    50   ~ 0
-COL_LATCH
+ROW_LATCH
 Wire Wire Line
 	4100 5250 4550 5250
 Wire Wire Line
@@ -1154,11 +1154,11 @@ Wire Wire Line
 Wire Wire Line
 	4100 5450 4550 5450
 Text Label 5650 4350 0    50   ~ 0
-COL_LATCH
+ROW_LATCH
 Wire Wire Line
 	6100 4350 5650 4350
 Text Label 5650 4450 0    50   ~ 0
-COL_~OE
+ROW_~OE
 Wire Wire Line
 	6100 4450 5650 4450
 Wire Wire Line
@@ -1181,10 +1181,6 @@ Wire Wire Line
 	5650 4650 6100 4650
 Wire Wire Line
 	5650 4750 6100 4750
-Wire Wire Line
-	6100 4550 5650 4550
-Text Label 5650 4550 0    50   ~ 0
-COL_~RST
 NoConn ~ 7400 3550
 Text Notes 6900 3550 0    50   ~ 0
 JTDI
@@ -2114,7 +2110,7 @@ EN
 Text Label 7850 5050 2    50   ~ 0
 SPI2_CLK
 Text Label 7850 2050 2    50   ~ 0
-ROW_LATCH
+COL_LATCH
 Wire Wire Line
 	7400 3750 7850 3750
 Text Label 7850 3750 2    50   ~ 0
