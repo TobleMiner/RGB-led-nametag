@@ -36,3 +36,14 @@ used as a USB to UART bridge allowing normal programming of the ESP32
 directly from your favourite IDE.
 
 ![Render of PCB backside](assets/pcb_back.png)
+
+![Render of PCB top](assets/pcb_top.png)
+
+# Assembly
+
+Since double sided assembly and boards with blind vias tends to be on the
+expensive side this project is comprised of four boards. The first one is
+the board shown above. The remaining three boards are all the same and
+carry 16x16 LEDs each. They need to be soldered back to back onto the
+mainboard. Design files for the LED carrier boards can be found
+[here](https://github.com/TobleMiner/16x16-RGB-led-panel).
