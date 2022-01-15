@@ -29,7 +29,7 @@ of the four data lines are utilized to provide data for all three LED
 groups simultaneously.  
 Both the SPI and QSPI are peripherals of an STM32F722 MCU. The STM32
 takes care of LED multiplexing, power management, user io and USB.  
-To provide WLAN connectivity and ESP32 is connected to the STM32 via
+To provide WLAN connectivity an ESP32 is connected to the STM32 via
 an IRQ line, a SPI interface, an I2C interface and a UART. IO0 and EN of
 the ESP32 are also connected to the STM32. This allows the STM32 to be
 used as a USB to UART bridge allowing normal programming of the ESP32
