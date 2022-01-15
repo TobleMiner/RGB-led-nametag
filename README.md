@@ -47,3 +47,5 @@ the board shown above. The remaining three boards are all the same and
 carry 16x16 LEDs each. They need to be soldered back to back onto the
 mainboard. Design files for the LED carrier boards can be found
 [here](https://github.com/TobleMiner/16x16-RGB-led-panel).
+
+![Firework animation playing on the nametag](assets/firework.gif)
