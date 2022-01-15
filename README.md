@@ -8,7 +8,7 @@ At only 84mm wide and 29mm tall it is hardly any larger than normal,
 boring paper nametags and packs a whole lot more features:
 
 - WLAN enabled
-- 16x48 glorious RGB led pixels with 16 million colors each
+- 48x16 glorious RGB led pixels with more than 16 million colors each
 - Powerful ARM Cortex M7 and Xtensa 32bit dual core
 - 3MB of onboard data storage
 
